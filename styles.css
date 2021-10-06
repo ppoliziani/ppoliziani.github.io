@@ -10,7 +10,9 @@ body {
     font-size: 60px;
   }
   p {
-    color: rgb(184, 109, 255);
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 20%;
   }
 
   span{
