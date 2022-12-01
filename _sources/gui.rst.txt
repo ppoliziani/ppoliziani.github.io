@@ -1,0 +1,6 @@
+GUI
+=========
+.. automodule:: GUI
+
+.. autoclass:: HotellingGUI
+    :members:
