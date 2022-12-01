@@ -1,6 +1,0 @@
-Hotelling
-=========
-.. automodule:: hotelling
-
-.. autoclass:: HotellingClass
-    :members:

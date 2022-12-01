@@ -1,6 +1,0 @@
-Solver
-=========
-.. automodule:: solver
-
-.. autoclass:: SolverClass
-    :members:
