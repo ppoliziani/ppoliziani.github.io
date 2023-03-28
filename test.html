@@ -17,7 +17,6 @@
     <script src="_static/sphinx_highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="GUI" href="gui.html" />
     <link rel="prev" title="Solver" href="sol.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -58,9 +57,9 @@
 <span class="sig-name descname"><span class="pre">test_create_matrix</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_hotelling.TestHotelling.test_create_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tests create_matrix function</p>
 <ul class="simple">
-<li><p>First test is simple 2 strategies per player game as outlined in Interim Report</p></li>
-<li><p>Second test is a more complicated 3 strategy game</p></li>
-<li><p>Third test is an n x m game, players have different number of strategies</p></li>
+<li><p>First test.py is simple 2 strategies per player game as outlined in Interim Report</p></li>
+<li><p>Second test.py is a more complicated 3 strategy game</p></li>
+<li><p>Third test.py is an n x m game, players have different number of strategies</p></li>
 </ul>
 </dd></dl>
 
@@ -80,7 +79,7 @@
 <dt class="sig sig-object py" id="test_solver.TestSolver.test_solve_prisoners">
 <span class="sig-name descname"><span class="pre">test_solve_prisoners</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_solver.TestSolver.test_solve_prisoners" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tests solve_prisoner function</p>
-<p>First and second test are 2 simple 2 strategy games with only difference the location of the Nash equilibrium</p>
+<p>First and second test.py are 2 simple 2 strategy games with only difference the location of the Nash equilibrium</p>
 </dd></dl>
 
 <dl class="py method">
@@ -88,9 +87,47 @@
 <span class="sig-name descname"><span class="pre">test_solve_staghunt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_solver.TestSolver.test_solve_staghunt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Tests solve_staghunt function</p>
 <ul class="simple">
-<li><p>First test simple 2 x 2 matrix game</p></li>
-<li><p>Second test higher dimension 3 x 3 matrix game</p></li>
+<li><p>First test.py simple 2 x 2 matrix game</p></li>
+<li><p>Second test.py higher dimension 3 x 3 matrix game</p></li>
 </ul>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-test_linearSolver"></span><dl class="py class">
+<dt class="sig sig-object py" id="test_linearSolver.TestLinearSolver">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">test_linearSolver.</span></span><span class="sig-name descname"><span class="pre">TestLinearSolver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#test_linearSolver.TestLinearSolver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class used for testing Solver Class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="test_linearSolver.TestLinearSolver.test_solver">
+<span class="sig-name descname"><span class="pre">test_solver</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_linearSolver.TestLinearSolver.test_solver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests the Gurobi solver function</p>
+<p>Matrices describing games</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-test_simplex"></span><dl class="py class">
+<dt class="sig sig-object py" id="test_simplex.TestSimplex">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">test_simplex.</span></span><span class="sig-name descname"><span class="pre">TestSimplex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#test_simplex.TestSimplex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class used for testing Solver Class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="test_simplex.TestSimplex.test_compute_oddment">
+<span class="sig-name descname"><span class="pre">test_compute_oddment</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_simplex.TestSimplex.test_compute_oddment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests the oddments values of a game</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_simplex.TestSimplex.test_lemkeHowson">
+<span class="sig-name descname"><span class="pre">test_lemkeHowson</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_simplex.TestSimplex.test_lemkeHowson" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests Lemke-Howson implemented via the Simplex method</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_simplex.TestSimplex.test_simplex2">
+<span class="sig-name descname"><span class="pre">test_simplex2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_simplex.TestSimplex.test_simplex2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests the Simplex method</p>
+<p>Matrices describing games of a variety of sizes and types</p>
 </dd></dl>
 
 </dd></dl>
@@ -116,7 +153,11 @@
 <h3>Navigation</h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sim.html">Simplex</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hot.html">Hotelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lin.html">LinearSolver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gui.html">GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bac.html">Backend</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sol.html">Solver</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Tests</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#test_hotelling.TestHotelling"><code class="docutils literal notranslate"><span class="pre">TestHotelling</span></code></a><ul>
@@ -131,9 +172,18 @@
 <li class="toctree-l3"><a class="reference internal" href="#test_solver.TestSolver.test_solve_staghunt"><code class="docutils literal notranslate"><span class="pre">TestSolver.test_solve_staghunt()</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#test_linearSolver.TestLinearSolver"><code class="docutils literal notranslate"><span class="pre">TestLinearSolver</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#test_linearSolver.TestLinearSolver.test_solver"><code class="docutils literal notranslate"><span class="pre">TestLinearSolver.test_solver()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="gui.html">GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#test_simplex.TestSimplex"><code class="docutils literal notranslate"><span class="pre">TestSimplex</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#test_simplex.TestSimplex.test_compute_oddment"><code class="docutils literal notranslate"><span class="pre">TestSimplex.test_compute_oddment()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#test_simplex.TestSimplex.test_lemkeHowson"><code class="docutils literal notranslate"><span class="pre">TestSimplex.test_lemkeHowson()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#test_simplex.TestSimplex.test_simplex2"><code class="docutils literal notranslate"><span class="pre">TestSimplex.test_simplex2()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
 <div class="relations">
@@ -141,7 +191,6 @@
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="sol.html" title="previous chapter">Solver</a></li>
-      <li>Next: <a href="gui.html" title="next chapter">GUI</a></li>
   </ul></li>
 </ul>
 </div>
@@ -168,7 +217,7 @@
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2022, Philip Poliziani.
+      &copy;2022-23, Philip Poliziani.
       
       |
       Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>

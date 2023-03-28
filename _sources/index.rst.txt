@@ -7,13 +7,16 @@ Welcome to Hotelling Nash Solver's documentation!
 =================================================
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 7
    :caption: Contents:
 
+   sim.rst
    hot.rst
+   lin.rst
+   gui.rst
+   bac.rst
    sol.rst
    test.rst
-   gui.rst
 
 Indices and tables
 ==================

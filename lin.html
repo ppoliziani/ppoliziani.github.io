@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>GUI &#8212; Hotelling Nash Solver  documentation</title>
+    <title>LinearSolver &#8212; Hotelling Nash Solver  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
@@ -17,8 +17,8 @@
     <script src="_static/sphinx_highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Backend" href="bac.html" />
-    <link rel="prev" title="LinearSolver" href="lin.html" />
+    <link rel="next" title="GUI" href="gui.html" />
+    <link rel="prev" title="Hotelling" href="hot.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -35,30 +35,24 @@
 
           <div class="body" role="main">
             
-  <section id="module-GUI">
-<span id="gui"></span><h1>GUI<a class="headerlink" href="#module-GUI" title="Permalink to this heading">¶</a></h1>
+  <section id="module-linearSolver">
+<span id="linearsolver"></span><h1>LinearSolver<a class="headerlink" href="#module-linearSolver" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="GUI.HotellingGUI">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GUI.</span></span><span class="sig-name descname"><span class="pre">HotellingGUI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GUI.HotellingGUI" title="Permalink to this definition">¶</a></dt>
-<dd><p>Graphical Interface to display Hotelling model diagrammatically</p>
+<dt class="sig sig-object py" id="linearSolver.linearSolverClass">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">linearSolver.</span></span><span class="sig-name descname"><span class="pre">linearSolverClass</span></span><a class="headerlink" href="#linearSolver.linearSolverClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gurobi Linear Optimization to solve zero-sum nash equilibira games</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="GUI.HotellingGUI.get_data">
-<span class="sig-name descname"><span class="pre">get_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hotelling</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GUI.HotellingGUI.get_data" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets the position data from a randomly generated Hotelling scenario</p>
+<dt class="sig sig-object py" id="linearSolver.linearSolverClass.solver">
+<span class="sig-name descname"><span class="pre">solver</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">M</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linearSolver.linearSolverClass.solver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solves n x n zero-sum Nash equilibrium games utilising the Gurobi linear optimization library</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>hotelling</strong> – Hotelling class object</p>
+<dd class="field-odd"><p><strong>M</strong> – List[List[int]]: zero-sum payoff matrix describing a 2 player game</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>List[[int, int]]: list of player candidate positions</p>
+<dd class="field-even"><p>List[]: list of probability values players play their strategy</p>
 </dd>
 </dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="GUI.HotellingGUI.main">
-<span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GUI.HotellingGUI.main" title="Permalink to this definition">¶</a></dt>
-<dd><p>Main function to display Hotelling scenario</p>
 </dd></dl>
 
 </dd></dl>
@@ -86,15 +80,14 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="sim.html">Simplex</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hot.html">Hotelling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lin.html">LinearSolver</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">GUI</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#GUI.HotellingGUI"><code class="docutils literal notranslate"><span class="pre">HotellingGUI</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#GUI.HotellingGUI.get_data"><code class="docutils literal notranslate"><span class="pre">HotellingGUI.get_data()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#GUI.HotellingGUI.main"><code class="docutils literal notranslate"><span class="pre">HotellingGUI.main()</span></code></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">LinearSolver</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#linearSolver.linearSolverClass"><code class="docutils literal notranslate"><span class="pre">linearSolverClass</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#linearSolver.linearSolverClass.solver"><code class="docutils literal notranslate"><span class="pre">linearSolverClass.solver()</span></code></a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="gui.html">GUI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bac.html">Backend</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sol.html">Solver</a></li>
 <li class="toctree-l1"><a class="reference internal" href="test.html">Tests</a></li>
@@ -104,8 +97,8 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="lin.html" title="previous chapter">LinearSolver</a></li>
-      <li>Next: <a href="bac.html" title="next chapter">Backend</a></li>
+      <li>Previous: <a href="hot.html" title="previous chapter">Hotelling</a></li>
+      <li>Next: <a href="gui.html" title="next chapter">GUI</a></li>
   </ul></li>
 </ul>
 </div>
@@ -139,7 +132,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/gui.rst.txt"
+      <a href="_sources/lin.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

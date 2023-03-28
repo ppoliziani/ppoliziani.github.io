@@ -1,0 +1,6 @@
+Simplex
+=========
+.. automodule:: simplex
+
+.. autoclass:: simplexClass
+    :members:
