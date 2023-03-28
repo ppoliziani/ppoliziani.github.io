@@ -1,0 +1,6 @@
+LinearSolver
+=============
+.. automodule:: linearSolver
+
+.. autoclass:: linearSolverClass
+    :members:

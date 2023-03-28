@@ -17,8 +17,8 @@
     <script src="_static/sphinx_highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Solver" href="sol.html" />
-    <link rel="prev" title="Welcome to Hotelling Nash Solver’s documentation!" href="index.html" />
+    <link rel="next" title="LinearSolver" href="lin.html" />
+    <link rel="prev" title="Simplex" href="sim.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -56,7 +56,7 @@
 <dt class="sig sig-object py" id="hotelling.HotellingClass.change_line">
 <span class="sig-name descname"><span class="pre">change_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hotelling.HotellingClass.change_line" title="Permalink to this definition">¶</a></dt>
 <dd><p>updates the values of the line used to calculate player payoff
-and the line length if greater than initialsied line lenght</p>
+and the line length if greater than initialsied line length</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>line</strong> – List[integer]: list of values</p>
@@ -71,6 +71,17 @@ and the line length if greater than initialsied line lenght</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>pos</strong> – List[[int, int]]: list of player positions</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hotelling.HotellingClass.change_size">
+<span class="sig-name descname"><span class="pre">change_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hotelling.HotellingClass.change_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the number of strategies for both players</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>size</strong> – number of strategies</p>
 </dd>
 </dl>
 </dd></dl>
@@ -131,11 +142,13 @@ and the line length if greater than initialsied line lenght</p>
 <h3>Navigation</h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sim.html">Simplex</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Hotelling</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#hotelling.HotellingClass"><code class="docutils literal notranslate"><span class="pre">HotellingClass</span></code></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#hotelling.HotellingClass.change_length"><code class="docutils literal notranslate"><span class="pre">HotellingClass.change_length()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hotelling.HotellingClass.change_line"><code class="docutils literal notranslate"><span class="pre">HotellingClass.change_line()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hotelling.HotellingClass.change_pos"><code class="docutils literal notranslate"><span class="pre">HotellingClass.change_pos()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hotelling.HotellingClass.change_size"><code class="docutils literal notranslate"><span class="pre">HotellingClass.change_size()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hotelling.HotellingClass.create_matrix"><code class="docutils literal notranslate"><span class="pre">HotellingClass.create_matrix()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hotelling.HotellingClass.create_scenario"><code class="docutils literal notranslate"><span class="pre">HotellingClass.create_scenario()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hotelling.HotellingClass.get_length"><code class="docutils literal notranslate"><span class="pre">HotellingClass.get_length()</span></code></a></li>
@@ -143,17 +156,19 @@ and the line length if greater than initialsied line lenght</p>
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="lin.html">LinearSolver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gui.html">GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bac.html">Backend</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sol.html">Solver</a></li>
 <li class="toctree-l1"><a class="reference internal" href="test.html">Tests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gui.html">GUI</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="index.html" title="previous chapter">Welcome to Hotelling Nash Solver’s documentation!</a></li>
-      <li>Next: <a href="sol.html" title="next chapter">Solver</a></li>
+      <li>Previous: <a href="sim.html" title="previous chapter">Simplex</a></li>
+      <li>Next: <a href="lin.html" title="next chapter">LinearSolver</a></li>
   </ul></li>
 </ul>
 </div>
@@ -180,7 +195,7 @@ and the line length if greater than initialsied line lenght</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2022, Philip Poliziani.
+      &copy;2022-23, Philip Poliziani.
       
       |
       Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>

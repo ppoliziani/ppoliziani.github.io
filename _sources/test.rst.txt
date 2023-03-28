@@ -10,3 +10,13 @@ Tests
 
 .. autoclass:: TestSolver
     :members:
+
+.. automodule:: test_linearSolver
+
+.. autoclass:: TestLinearSolver
+    :members:
+
+.. automodule:: test_simplex
+
+.. autoclass:: TestSimplex
+    :members:
